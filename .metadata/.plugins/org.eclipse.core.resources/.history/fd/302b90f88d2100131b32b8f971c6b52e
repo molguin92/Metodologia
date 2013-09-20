@@ -1,0 +1,5 @@
+package iclock;
+
+public abstract class IClock {
+
+}

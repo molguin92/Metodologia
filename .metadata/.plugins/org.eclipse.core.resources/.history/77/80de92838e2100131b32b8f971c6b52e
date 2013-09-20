@@ -1,0 +1,15 @@
+package iclock;
+
+/**
+ * Abstract class that represents a clock.
+ * 
+ * This class provides all the basic functionality for the implementation for
+ * the implementation of a clock.
+ * 
+ * @author Manuel Olguin
+ * 
+ */
+
+public abstract class IClock {
+	
+}
