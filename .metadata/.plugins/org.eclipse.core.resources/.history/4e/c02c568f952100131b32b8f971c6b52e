@@ -1,0 +1,19 @@
+package iclock;
+
+/**
+ * Implementation of a classic (AM/PM) clock.
+ * 
+ * @author Manuel Olguin
+ * 
+ */
+
+public class ClassicClock extends IClock {
+	
+	public ClassicClock(){
+		super ();
+	}
+	
+	public ClassicClock(int seconds){
+		super(seconds);
+	}
+}

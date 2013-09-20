@@ -1,0 +1,6 @@
+package iclock;
+
+
+public class ClassiClock extends IClock {
+	
+}

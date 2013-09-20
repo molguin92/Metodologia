@@ -1,0 +1,37 @@
+package iclock;
+
+/**
+ * Abstract class that represents a clock.
+ * 
+ * This class provides all the basic functionality for the implementation of a
+ * clock.
+ * 
+ * @author Manuel Olguin
+ * 
+ */
+
+public abstract class IClock {
+	
+	private int seconds;
+	
+	/**
+	 * Constructs a clock with an initial time of zero seconds.
+	 */
+	
+	public IClock() {
+	
+		this(0);
+	}
+	
+	/**
+	 * Constructs a clock with the specified initial time in seconds.
+	 * 
+	 * @param seconds
+	 *            The initial time of the clock, in seconds.
+	 */
+	
+	public IClock(int seconds) {
+	
+	}
+	
+}

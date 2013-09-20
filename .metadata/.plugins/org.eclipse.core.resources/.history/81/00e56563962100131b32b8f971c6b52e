@@ -1,0 +1,32 @@
+package iclock;
+
+/**
+ * Implementation of a classic (AM/PM) clock.
+ * 
+ * @author Manuel Olguin
+ * 
+ */
+
+public class ClassicClock extends IClock {
+	
+	/**
+	 * Constructs a ClassicClock with an initial time of zero hours, zero
+	 * minutes and zero seconds AM.
+	 */
+	
+	public ClassicClock () {
+	
+		super ();
+	}
+	
+	/**
+	 * Constructs a ClassicClock with the specified initial time
+	 * 
+	 * @param seconds
+	 */
+	
+	public ClassicClock (int seconds) {
+	
+		super (seconds);
+	}
+}

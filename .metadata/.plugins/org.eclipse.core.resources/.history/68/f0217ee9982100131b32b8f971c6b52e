@@ -1,0 +1,55 @@
+package iclock;
+
+/**
+ * Implementation of a classic (AM/PM) clock.
+ * 
+ * @author Manuel Olguin
+ * 
+ */
+
+public class ClassicClock extends IClock {
+	
+	public static final int AM = 0;
+	public static final int PM = 1;
+	
+	/**
+	 * Constructs a ClassicClock with an initial time of zero hours, zero
+	 * minutes and zero seconds AM.
+	 */
+	
+	public ClassicClock () {
+	
+		super ();
+	}
+	
+	/**
+	 * Constructs a ClassicClock with the specified time in hours, minutes and
+	 * seconds, along with an AM/PM modifier.
+	 * 
+	 * @param hours
+	 *            The initial number of hours.
+	 * @param minutes
+	 *            The initial number of minutes.
+	 * @param seconds
+	 *            The initial number of seconds.
+	 * @param ampm
+	 *            AM/PM modifier, 0 for AM, 1 for PM. The ClassicClock class has
+	 *            static fields associated with these values.
+	 */
+	
+	public ClassicClock (int hours, int minutes, int seconds, int ampm)
+			throws TimeOutOfRangeException {
+	
+		super ();
+		
+		if (hours < 0 || hours > 11 || minutes < 0 || minutes > 59
+				|| seconds < 0 || seconds > 59 || ampm < 0 || ampm > 1) {
+			throw new TimeOutOfRangeException ();
+		}
+		
+		this.seconds = hours*3600 + minutes*60 + seconds;
+		if(ampm == ClassicClock.PM){
+			seconds += 12*3600;
+		}
+	}
+}

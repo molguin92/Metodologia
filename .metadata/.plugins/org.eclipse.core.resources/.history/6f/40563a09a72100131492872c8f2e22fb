@@ -1,0 +1,31 @@
+package iclock;
+
+/**
+ * Abstract class that represents a clock.
+ * 
+ * This class provides all the basic functionality for the implementation of a
+ * clock.
+ * 
+ * @author Manuel Olguin
+ * 
+ */
+
+public interface IClock {
+	
+	/**
+	 * Increments the time of the clock by one second.
+	 */
+	public void increment () {
+	
+	}
+	
+	public class TimeOutOfRangeException extends Exception {
+		
+		/**
+		 * This exception is to be thrown any time an invalid time is passed as
+		 * parameter for a clock class.
+		 */
+		private static final long serialVersionUID = 1L;
+		
+	}
+}

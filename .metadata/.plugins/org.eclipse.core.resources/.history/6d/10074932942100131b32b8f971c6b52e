@@ -1,0 +1,12 @@
+package iclock;
+
+/**
+ * 
+ * 
+ * @author arachnid92
+ *
+ */
+
+public class ClassicClock extends IClock {
+	
+}

@@ -1,0 +1,52 @@
+package iclock;
+
+/**
+ * Abstract class that represents a clock.
+ * 
+ * This class provides all the basic functionality for the implementation of a
+ * clock.
+ * 
+ * @author Manuel Olguin
+ * 
+ */
+
+public interface IClock {
+	
+	/**
+	 * Increments the time of the clock by one second.
+	 */
+	public void increment ();
+	
+	/**
+	 * Compares two clocks and returns true if they have the same time, or false
+	 * otherwise.
+	 * 
+	 * @param clock
+	 *            The clock to compare with.
+	 * @return true if the clocks are synchronized, false otherwise.
+	 */
+	public boolean isSynchronized (IClock clock);
+	
+	/**
+	 * Synchronizes two clocks. Note that this method modifies the clock
+	 * received as parameter, NOT the instance of the clock that receives the
+	 * call.
+	 * 
+	 * @param clock
+	 *            The clock that is to be synchronized.
+	 */
+	public void synchronize (IClock clock);
+	
+	@Override
+	public String toString();
+	
+	public class TimeOutOfRangeException extends Exception {
+		
+		/**
+		 * This exception is to be thrown any time an invalid time is passed as
+		 * parameter for a clock class.
+		 */
+		private static final long serialVersionUID = 1L;
+		
+	}
+}
